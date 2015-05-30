@@ -39,18 +39,18 @@ This DOCKERFILE add's:
 * Apache
 * Perl
 * All needed dependencies
-* OTRS 4.0.8 (RPM) + ITSM 4.0.8 (OPM Package)
+* OTRS 4.0.7 (RPM) + ITSM 4.0.7 (OPM Package)
 
 ##Run Container
 
 ### Non-ITSM
-     docker pull hanneshal/otrs4-docker
-     docker run -d -p 80 -p 22 --name otrs408 hanneshal/otrs4-docker
+     docker pull pgold30/otrs4-docker
+     docker run -d -p 80 -p 22 --name otrs407 pgold30/otrs4-docker
      docker ps (to get the ports)
 
 ### ITSM
-     docker pull hanneshal/otrs4-docker:latest-itsm
-     docker run -d -p 80 -p 22 --name otrsitsm408 hanneshal/otrs4-docker:latest-itsm
+     docker pull pgold30/otrs4-docker:latest-itsm
+     docker run -d -p 80 -p 22 --name otrsitsm407 pgold30/otrs4-docker:latest-itsm
      docker ps (to get the ports)
 
  **Note: On first run the ITSM is being installed. This could take up to 2 minutes.
